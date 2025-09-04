@@ -1,0 +1,58 @@
+.cart-summary-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 16px 0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.order-total-value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.order-total-label {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.total-items {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.checkout-button {
+  background-color: #0b69ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkout-button:hover {
+  background-color: #0956cc;
+}
+
+/* Responsive utilities (if you're not using Bootstrap) */
+.d-sm-none {
+  display: none;
+}
+
+.d-lg-none {
+  display: inline-block;
+}
+
+/* Show/hide based on screen width */
+@media screen and (min-width: 768px) {
+  .d-sm-none {
+    display: inline-block;
+  }
+  .d-lg-none {
+    display: none;
+  }
+}
