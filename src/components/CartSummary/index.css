@@ -38,21 +38,71 @@
   background-color: #0956cc;
 }
 
-/* Responsive utilities (if you're not using Bootstrap) */
-.d-sm-none {
-  display: none;
-}
-
-.d-lg-none {
+/* ✅ New class for single responsive checkout button */
+.responsive-checkout {
   display: inline-block;
+  width: 100%;
 }
 
-/* Show/hide based on screen width */
 @media screen and (min-width: 768px) {
-  .d-sm-none {
-    display: inline-block;
+  .responsive-checkout {
+    width: auto;
+    font-size: 18px;
+    padding: 12px 24px;
   }
-  .d-lg-none {
-    display: none;
-  }
+}
+
+.popup-content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 400px;
+  margin-right: 100px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+.payment-form label {
+  display: block;
+  margin: 10px 0;
+}
+
+.summary {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.confirm-order-button {
+  margin-top: 20px;
+  background-color: #0b69ff;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.confirm-order-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.success-message {
+  text-align: center;
+  font-size: 18px;
+  color: green;
+}
+
+.close-button {
+  margin-top: 15px;
+  background: transparent;
+  color: #333;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
